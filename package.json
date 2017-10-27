@@ -1,0 +1,29 @@
+{
+  "name": "bj_rent_map",
+  "description": "The map shows the rent market in Beijing",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "author": "Zed",
+  "main": "app.js",
+  "engines": {
+    "node": "8.x"
+  },
+  "scripts": {
+    "deploy": "gcloud app deploy",
+    "start": "node app.js",
+    "lint": "samples lint",
+    "pretest": "npm run lint",
+    "system-test": "samples test app",
+    "test": "npm run system-test",
+    "e2e-test": "samples test deploy"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "cheerio": "^0.22.0",
+    "compression": "^1.7.1",
+    "express": "^4.16.2",
+    "mongoose": "^4.6.8",
+    "request": "^2.78.0"
+  }
+}

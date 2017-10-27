@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title id="title">北京租房</title>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108459233-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-108459233-2');
+  </script>
+  <script src="/lib/jquery.min.js"></script>
+  <script src="/lib/dat.gui/dat.gui.min.js"></script>
+  <script src="/lib/leaflet/leaflet.js"></script>
+  <script src="/lib/leaflet/leaflet-heat.js"></script>
+  <script src="/lib/leaflet/leaflet.ChineseTmsProviders.js"></script>
+  <script src="/lib/typeahead.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/leaflet.css">
+  <link rel="stylesheet" type="text/css" href="/css/dat.gui.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
+<body>
+  <div class="container" id="map"></div>
+  <div class="func">
+      <input class="typeahead" type="text" placeholder="小区名">
+  </div>
+  <script type="text/javascript" src="/js/bj.geojson.js"></script>
+  <script type="text/javascript" src="/js/bj_subway_line.js"></script>
+  <script type="text/javascript" src="/js/bj_subway_station.js"></script>
+  <script type="text/javascript" src="/js/draw.js"></script>
+</body>
+</html>
