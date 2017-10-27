@@ -223,7 +223,7 @@ function updateScatter(){
 //点大小、颜色控制面板
 var gui = new dat.gui.GUI();
 // gui.domElement.id = 'gui';
-var p1 = gui.addFolder('控制面板');
+var p1 = gui.addFolder('github.com/ZedYeung/beijing_rent_map');
 p1.addColor(crange, '0').name('最小值颜色').onChange(updateScatter);
 p1.addColor(crange, '1').name('最大值颜色').onChange(updateScatter);
 p1.add(rrange, '0', 0, 5).name('最小值大小').onChange(updateScatter);
